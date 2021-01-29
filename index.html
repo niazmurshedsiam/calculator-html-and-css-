@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+    <style>
+      form{
+        width: 250px;
+
+        background: #ddd;
+        padding : 30px 15px 15px 15px;
+        -webkit-box-shadow:inset 0 2px 5px 2px rgba(0,0,8,6);
+        box-shadow:inset 0 2px 5px 2px rgba(0,0,8,6);
+
+      }
+  input[type="text"]{
+   font-family: 'Orbitron';font-size: 10px;
+    width:100%;
+    font-size:36px;
+    padding:5px 5px;
+    box-sizing : border-box;
+    text-align:right;
+  }
+input[type = "button"]{
+
+  width: 58px;
+  height: 55px;
+  background:#b3b3b3;
+  color:#e6ffe6;
+  font-size:24px;
+  margin-bottom: 5px;
+}
+hr{
+  margin:15px 0;
+}
+
+    </style>
+  </head>
+  <body>
+<form class="" name= "calculator"action="index.html" method="post">
+  <input type="text" name="Screen" value="">
+  <hr>
+  <input type="button" name="" value="&radic;"onclick="calculator.Screen.value = Math.sqrt(calculator.Screen.value )">
+  <input type="button" name="" value="CE"onclick="calculator.Screen.value =''">
+  <input type="button" name="" value="C"onclick="calculator.Screen.value =''">
+<input type="button" name="" value="&larr;"onclick="calculator.Screen.value = calculator.Screen.value.slice(0,-1)">
+
+<br>
+
+<input type="button" name="" value="7" onclick="calculator.Screen.value+='7'">
+<input type="button" name="" value="8" onclick="calculator.Screen.value+='8'">
+<input type="button" name="" value="9" onclick="calculator.Screen.value+='9'">
+<input type="button" name="" value="+" onclick="calculator.Screen.value+='+'">
+
+<br>
+
+<input type="button" name="" value="4" onclick="calculator.Screen.value+='4'">
+<input type="button" name="" value="5" onclick="calculator.Screen.value+='5'">
+<input type="button" name="" value="6" onclick="calculator.Screen.value+='6'">
+<input type="button" name="" value="-" onclick="calculator.Screen.value+='-'">
+
+<br>
+
+<input type="button" name="" value="1" onclick="calculator.Screen.value+='1'">
+<input type="button" name="" value="2" onclick="calculator.Screen.value+='2'">
+<input type="button" name="" value="3" onclick="calculator.Screen.value+='3'">
+<input type="button" name="" value="*" onclick="calculator.Screen.value+='*'">
+
+<br>
+
+<input type="button" name="" value="0" onclick="calculator.Screen.value+='0'">
+<input type="button" name="" value="." onclick="calculator.Screen.value+='.'">
+<input type="button" name="" value="=" onclick="calculator.Screen.value = eval(calculator.Screen.value)">
+<input type="button" name="" value="/" onclick="calculator.Screen.value+='/'">
+
+<br>
+
+</form>
+  </body>
+</html>
